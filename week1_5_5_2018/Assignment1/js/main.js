@@ -14,12 +14,12 @@ $(document).ready(function(){
     $("#show").click(function () {
         $(".tableRow").removeClass("invisible");
         $(".tableRow").addClass("visible");
-        console.log("test");
+        console.log("show");
        });
     $("#hide").click(function () {
         $(".tableRow").removeClass("visible");
         $(".tableRow").addClass("invisible");
-        console.log("test");
+        console.log("hide");
     });
 
 });

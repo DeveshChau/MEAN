@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<script src='table.js'></script>
+	<style>
+		table.borderless td,table.borderless th{
+     border: none !important;
+}
+	</style>
+</head>
+
+<body>
+
+	<div id="inputDiv" class="container">
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<h1>Student Record Management</h1>
+				<table id='inputTable'class="table borderless" >
+					<tr>
+						<th>Name</th>
+						<td><input class="form-control" type='text' placeholder='Enter Name' id='txtName' /></td>
+					</tr>
+					<tr>
+						<th>Age</th>
+						<td><input class="form-control" type='text' placeholder='Enter Age' id='txtAge' /></td>
+					</tr>
+					<tr>
+						<th>Grade</th>
+						<td><input class="form-control" type='text' placeholder='Enter Grade' id='txtGrade' /></td>
+					</tr>
+
+
+					<tr>
+
+						<td colspan="2" align="right">
+
+							<input class="btn btn-default" type='button' value='Add' onclick="populateArray(txtName.value,txtAge.value,txtGrade.value)"
+							/>
+							<input class="btn btn-default" type='button' value='Show' onclick="showDetails()" />
+						</td>
+					</tr>
+				</table>
+
+				<p>
+					Record Details:
+				</p>
+				<div id="outputDiv">
+					<table id='outputTable' border="0" class="table table-striped">
+
+					</table>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+
+</body>
+
+</HTML>
