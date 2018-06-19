@@ -1,0 +1,27 @@
+<h1>Avatar Users</h1>
+<!-- <ul class="list-group card" style="margin: 10px" *ngFor="let avUser of avatarUser">
+  <div class="row">
+    <div class="col-md-4">
+      <li class="list-group-item">ID: {{avUser.id}}</li>
+      <li class="list-group-item">First Name: {{avUser.first_name}}</li>
+      <li class="list-group-item">Last Name: {{avUser.last_name}}</li>
+    </div>
+    <div class="col-md-8">
+      <li class="list-group-item">
+        <img src={{avUser.avatar}}>
+      </li>
+    </div>
+  </div>
+</ul> -->
+
+<div class="container">
+  <div class="row" *ngFor="let avUser of avatarUser" style="margin: 10px">
+    <div class="col-md-4">
+      <p>ID: {{avUser.id}}</p>
+      <p>First Name: {{avUser.first_name}}</p>
+    </div>
+    <div class="col-md-8">
+        <img src={{avUser.avatar}}>
+    </div>
+  </div>
+</div>

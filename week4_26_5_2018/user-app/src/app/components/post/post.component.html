@@ -1,0 +1,17 @@
+<p>
+  post works!
+</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-group card"  style="margin: 10px" *ngFor="let post of posts">
+        <li class="list-group-item">
+          Title: {{post.title}}
+        </li>
+        <li class="list-group-item">
+          Body: {{post.body}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
